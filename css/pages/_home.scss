@@ -1,0 +1,191 @@
+body{
+   
+    color: whitesmoke;
+   
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgb(230,230,230);
+    background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(14,14,66,1) 28%);
+   
+}
+
+.wrapper_container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.doctors{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    
+   
+}
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-radius: 8px;
+    border: white solid 1px;
+    cursor: pointer;
+    opacity: 0; /* Inizialmente tutti i contenitori sono invisibili */
+    animation-name: appear;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards; /* L'animazione mantiene l'ultimo stato */
+    transition: all .3s ease-in-out;
+     &:hover img{
+        filter: brightness(100%) ;
+        transform: scale(1.02);
+    }
+
+}
+.card:hover{
+    transform: scale(1.01) !important;
+    
+
+}
+.specialisation{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    span{
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+}
+.docpic{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    img{
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(80%) ;
+        transition: all .3s ease-in-out;
+}
+
+
+}
+.bio{
+    padding:25px;
+    font-family: 'Quicksand', sans-serif;
+   
+    font-size: 26px;
+}
+
+
+
+//logo
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    .logo{
+        min-width: 400px;
+        height: 350px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+        
+        img{
+            overflow: hidden;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+    }
+    h5{
+        font-family: 'Quicksand', sans-serif;
+        margin:0;
+        font-size: 50px;
+        margin-bottom: 100px;
+        margin-top: 0;
+        font-weight: 100;
+
+    }
+
+}
+
+//card buttons
+
+.callme{
+    background: rgba(255, 0, 0, 0.63);
+    border:  1px solid black;
+    padding:20px 40px;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+//transizione cards 
+
+  
+  /* Definizione dell'animazione */
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Partenza con una traslazione verso il basso */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Arrivo senza traslazione */
+    }
+  }
+  
+ 
+  .appearable:nth-child(1) {
+    animation-delay: 0.4s;
+  }
+  .appearable:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .appearable:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  
+  .appearable:nth-child(4) {
+    animation-delay: 1s;
+  }
+  .appearable{
+    transition:all .3s ease-in-out;
+  }
+
+//   spine animation
+
+  .spine{
+    position: fixed;
+    left: 0;
+    top: -50%;
+  }
+.spinepic{
+    
+    width: 100%;
+    transform: rotate(-90deg);
+    object-fit: cover;
+ 
+   }
+

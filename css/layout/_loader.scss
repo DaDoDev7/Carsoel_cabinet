@@ -1,0 +1,137 @@
+  
+  .loader  {
+    overflow: visible;
+    height: 100vh;
+    padding: 20px;
+    background: rgb(32,42,68);
+    background: radial-gradient(circle, rgb(45, 60, 97) 22%, rgba(32,42,68,1) 25%, rgba(32,42,68,0.7819502801120448) 32%, rgb(89, 107, 153) 40%, rgb(107, 125, 170) 42%, rgba(159,167,187,1) 58%, rgba(32,42,68,1) 78%, rgba(32,42,68,0.9416141456582633) 93%);
+    background-size: 200% 200%;
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 8s ease infinite;
+    display: none;
+    
+  }
+  .loader_content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+//animation loader 
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+//   fine animazione
+
+.logo {
+  width:40%;
+  fill: rgb(0, 0, 0);
+  stroke-dasharray: 30px;
+  /*<-- Play with this number until it look cool */
+  stroke: rgb(25, 121, 38);
+  animation: load 1s infinite linear;
+  transition: all 2s ease-in-out;
+  
+
+}
+
+.logo1 {
+ 
+  animation: load 8s infinite linear, logoleft 1s ease-in-out 1s ;
+  animation-fill-mode: forwards;
+}
+
+.logo2 {
+  
+  animation: load 8s infinite linear, logoright 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+  stroke: rgb(24, 189, 218);
+}
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+
+  100% {
+    stroke-dashoffset: 200px;
+    /* <-- This number should always be 10 times the number up there*/
+  }
+}
+
+
+@keyframes logoleft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes logoright {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translatey(80%);
+  }
+}
+
+
+
+.writing_loader{
+  font-size: 40px;
+  opacity: 0;
+  animation: writing .4s linear 2s;
+  white-space: nowrap;
+  color: rgb(243, 31, 31);
+  font-family: 'Dancing Script', cursive;
+  font-weight: 800;
+  animation-fill-mode:forwards;
+
+
+
+
+ 
+  
+}
+@keyframes writing {
+  0%{
+    opacity: 0;
+   
+  }  
+  100%{
+    
+    opacity: 1;
+    font-size: 45;
+   }
+  
+}
+
