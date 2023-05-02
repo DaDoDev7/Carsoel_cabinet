@@ -56,3 +56,15 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
+
+// const navLinks = document.querySelectorAll('.navlinks');
+
+// // Aggiungi un listener di click ad ogni elemento
+// navLinks.forEach(link => {
+//   link.addEventListener('click', (event) => {
+//    event.preventDefault();
+//     // Rimuovi la classe 'active' dalla nav
+//     headerNav.classList.remove('active');
+//   });
+// });
+

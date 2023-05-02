@@ -1,3 +1,24 @@
 html {
     scroll-behavior: smooth;
   }
+ body{
+   
+    color: whitesmoke;
+   
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgb(230,230,230);
+    background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(14,14,66,1) 28%);
+   padding-bottom: 40px;
+}
+
+.wrapper_container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
