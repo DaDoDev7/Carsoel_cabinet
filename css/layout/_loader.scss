@@ -1,5 +1,6 @@
   
   .loader  {
+
     overflow: visible;
     position: fixed;
     top: 0;
@@ -8,20 +9,17 @@
     width: 100%;
     padding: 20px;
     background: rgb(125,125,152);
-  background: radial-gradient(circle, rgba(125,125,152,1) 9%, rgba(209,209,214,1) 13%, rgba(230,230,230,1) 14%, rgba(104,104,136,1) 20%, rgba(209,209,214,1) 23%, rgba(230,230,230,1) 29%, rgba(196,196,205,1) 31%, rgba(172,172,187,1) 38%, rgba(96,96,129,1) 42%, rgba(110,110,140,1) 47%, rgba(48,48,92,1) 56%, rgba(100,100,132,1) 71%, rgba(14,14,66,1) 94%);
+    background: radial-gradient(circle, rgba(125,125,152,1) 9%, rgba(209,209,214,1) 13%, rgba(230,230,230,1) 14%, rgba(104,104,136,1) 20%, rgba(209,209,214,1) 23%, rgba(230,230,230,1) 29%, rgba(196,196,205,1) 31%, rgba(172,172,187,1) 38%, rgba(96,96,129,1) 42%, rgba(110,110,140,1) 47%, rgba(48,48,92,1) 56%, rgba(100,100,132,1) 71%, rgba(14,14,66,1) 94%);
     background-size: 200% 200%;
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 8s ease infinite;
     z-index: 45;
     transition: all .2s ease-in-out;
-   
     &.fade{
       opacity: 0;
       
     }
   
- 
-    
   }
 
   
