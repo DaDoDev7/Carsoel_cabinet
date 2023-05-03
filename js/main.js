@@ -45,16 +45,16 @@ window.addEventListener("scroll", function(e) {
   });
 
 
-  // Aggiungi un listener di eventi "click" a tutti i link di ancoraggio nella navbar
-var links = document.querySelectorAll('.navlinks');
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener('click', function() {
-    // Rimuovi la classe "visible" dall'elemento desiderato
-    var targetId = this.getAttribute('href').substring(1);
-    var targetElement = document.getElementById(targetId);
-    targetElement.classList.remove('active');
-  });
-}
+//   // Aggiungi un listener di eventi "click" a tutti i link di ancoraggio nella navbar
+// var links = document.querySelectorAll('.navlinks');
+// for (var i = 0; i < links.length; i++) {
+//   links[i].addEventListener('click', function() {
+//     // Rimuovi la classe "visible" dall'elemento desiderato
+//     var targetId = this.getAttribute('href').substring(1);
+//     var targetElement = document.getElementById(targetId);
+//     targetElement.classList.remove('active');
+//   });
+// }
 
 //LOADER ANIMATION
 
