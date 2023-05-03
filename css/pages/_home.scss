@@ -55,13 +55,11 @@
     position: fixed;
     left: -20%;
     top: -80%;
-    width: 100%;
+    width: 100vw;
   }
 .spinepic{
     
     width: 100%;
     transform: rotate(-90deg);
-    object-fit: cover;
- 
-   }
+  }
 
