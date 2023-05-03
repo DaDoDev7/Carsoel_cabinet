@@ -135,17 +135,17 @@
   
  
   .appearable:nth-child(1) {
-    animation-delay: 0.4s;
+    animation-delay: 4.4s;
   }
   .appearable:nth-child(2) {
-    animation-delay: 0.6s;
+    animation-delay: 4.6s;
   }
   .appearable:nth-child(3) {
-    animation-delay: 0.8s;
+    animation-delay: 4.8s;
   }
   
   .appearable:nth-child(4) {
-    animation-delay: 1s;
+    animation-delay: 5s;
   }
   .appearable{
     transition:all .3s ease-in-out;

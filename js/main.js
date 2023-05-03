@@ -56,15 +56,14 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
+//LOADER ANIMATION
 
-// const navLinks = document.querySelectorAll('.navlinks');
-
-// // Aggiungi un listener di click ad ogni elemento
-// navLinks.forEach(link => {
-//   link.addEventListener('click', (event) => {
-//    event.preventDefault();
-//     // Rimuovi la classe 'active' dalla nav
-//     headerNav.classList.remove('active');
-//   });
-// });
-
+window.addEventListener('load', function() {
+  var loader = document.querySelector('.loader');
+  setTimeout(function() {
+    loader.classList.add('fade');
+    setTimeout(function() {
+      loader.style.display = 'none';
+    }, 1000); 
+  }, 4000);
+});
