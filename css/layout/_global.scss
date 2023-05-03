@@ -10,7 +10,7 @@ html {
     width: 100%;
     height: 100%;
     background: rgb(230,230,230);
-    background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(14,14,66,1) 28%);
+    background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(14, 14, 66, 0.938) 28%);
    padding-bottom: 40px;
 }
 
@@ -21,4 +21,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+a{
+    text-decoration: none;
 }
