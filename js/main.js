@@ -19,42 +19,18 @@ window.addEventListener("scroll", function(){
 });
 
 var path = document.querySelector('#path');
-
-
 var pathLength = path.getTotalLength();
-
-
-// Make very long dashes (the length of the path itself)
 path.style.strokeDasharray = pathLength + ' ' + pathLength;
-
-// Offset the dashes so the it appears hidden entirely
 path.style.strokeDashoffset = pathLength;
 
 
 window.addEventListener("scroll", function(e) {
- 
-    // What % down is it? 
     var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-      
-    // Length to offset the dashes
     var drawLength = pathLength * scrollPercentage;
-    
-    // Draw in reverse
     path.style.strokeDashoffset = pathLength - drawLength;
     
   });
 
-
-//   // Aggiungi un listener di eventi "click" a tutti i link di ancoraggio nella navbar
-// var links = document.querySelectorAll('.navlinks');
-// for (var i = 0; i < links.length; i++) {
-//   links[i].addEventListener('click', function() {
-//     // Rimuovi la classe "visible" dall'elemento desiderato
-//     var targetId = this.getAttribute('href').substring(1);
-//     var targetElement = document.getElementById(targetId);
-//     targetElement.classList.remove('active');
-//   });
-// }
 
 //LOADER ANIMATION
 
@@ -66,4 +42,29 @@ window.addEventListener('load', function() {
       loader.style.display = 'none';
     }, 1000); 
   }, 4000);
+});
+
+
+//nav class  darken
+
+window.addEventListener('scroll', function() {
+  var cardItems = document.querySelectorAll('.card');
+  var navLinks = document.querySelectorAll('.navlinks');
+  var currentCardIndex = 0;
+  
+  // determina l'indice dell'ultima carta visibile
+  for (var i = 0; i < cardItems.length; i++) {
+    var bounding = cardItems[i].getBoundingClientRect();
+    if (bounding.top <= window.innerHeight && bounding.bottom >= 0) {
+      currentCardIndex = i;
+    }
+  }
+  
+  // rimuovi la classe 'darken' da tutte le navlinks
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.remove('darken');
+  }
+  
+  // aggiungi la classe 'darken' all'elemento di navigazione corrispondente all'ultima carta visibile
+  navLinks[currentCardIndex].classList.add('darken');
 });
