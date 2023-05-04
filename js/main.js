@@ -35,7 +35,7 @@ window.addEventListener("scroll", function(e) {
 //LOADER ANIMATION
 
 window.addEventListener('load', function() {
-  var loader = document.querySelector('.loader');
+  var loader = document.querySelector('.loader_wrapper');
   setTimeout(function() {
     loader.classList.add('fade');
     setTimeout(function() {
