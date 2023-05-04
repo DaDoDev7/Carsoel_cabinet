@@ -92,9 +92,17 @@
     .website{
         color: white;
         margin-right: 20px;
+        &:hover{
+          filter: brightness(80%);
+        }
+        
     }
     .linkedin{
         color:#00a0dc;
+        &:hover{
+          filter: brightness(80%);
+        }
+        
         
     }
     
@@ -135,17 +143,17 @@
   
  
   .appearable:nth-child(1) {
-    animation-delay: 4.4s;
+    animation-delay: .4s;
   }
   .appearable:nth-child(2) {
-    animation-delay: 4.6s;
+    animation-delay: .6s;
   }
   .appearable:nth-child(3) {
-    animation-delay: 4.8s;
+    animation-delay: .8s;
   }
   
   .appearable:nth-child(4) {
-    animation-delay: 5s;
+    animation-delay: 1s;
   }
   .appearable{
     transition:all .3s ease-in-out;
