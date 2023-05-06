@@ -18,6 +18,9 @@ window.addEventListener("scroll", function(){
     lastScroll = scrolled;
 });
 
+
+// SVG animation :D
+
 var path = document.querySelector('#path');
 var pathLength = path.getTotalLength();
 path.style.strokeDasharray = pathLength + ' ' + pathLength;
@@ -59,12 +62,9 @@ window.addEventListener('scroll', function() {
       currentCardIndex = i;
     }
   }
-  
-  // rimuovi la classe 'darken' da tutte le navlinks
+
   for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].classList.remove('darken');
   }
-  
-  // aggiungi la classe 'darken' all'elemento di navigazione corrispondente all'ultima carta visibile
-  navLinks[currentCardIndex].classList.add('darken');
+   navLinks[currentCardIndex].classList.add('darken');
 });
