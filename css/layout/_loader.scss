@@ -11,6 +11,7 @@
   z-index: 7;
   transition: all .4s ease-in-out;
   opacity: 1;
+  overflow: hidden;
   &.fade{
     opacity: 0;
   }
@@ -23,7 +24,13 @@
   position: relative;
 }
 .loader_content {
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+  font-family: 'Ysabeau', sans-serif;
+  color: #868585;
 }
 
 .loader:before {
