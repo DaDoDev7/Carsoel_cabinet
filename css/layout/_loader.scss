@@ -29,8 +29,14 @@
   left: 50%;
   transform: translate(-50%,-50%);
   white-space: nowrap;
-  font-family: 'Ysabeau', sans-serif;
+  font-family: 'Quicksand', sans-serif; ;
   color: #868585;
+  h1{
+    opacity: 0;
+    font-size: 25px;
+    font-weight: 200;
+    animation: writing 1s ease-in-out .5s forwards
+  }
 }
 
 .loader:before {
@@ -61,5 +67,16 @@
   }
 }
 
+@keyframes writing {
+  from{
+    opacity: 0;
+    font-size: 28px;
+  }
+  to{
+    opacity: 1;
+    font-size: 29px;
+  }
+  
+}
 
 
