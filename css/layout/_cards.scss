@@ -13,12 +13,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     flex: 1;
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.623);
-  
-    cursor: pointer;
     opacity: 0;
     animation-name: appear;
     animation-duration: 0.9s;
@@ -28,7 +25,7 @@
   
     .contacts{
         margin-bottom: 40px;
-        justify-self: flex-end;
+        justify-content: flex-end;
        
     }
      &:hover img{
@@ -160,19 +157,28 @@
   }
   
  
-  .appearable:nth-child(1) {
+  .appearable:nth-child(1), .cardabout:nth-child(1) {
     animation-delay: 4.4s;
   }
-  .appearable:nth-child(2) {
+  .appearable:nth-child(2) , .cardabout:nth-child(2)  {
     animation-delay: 4.6s;
   }
-  .appearable:nth-child(3) {
+  .appearable:nth-child(3) , .cardabout:nth-child(3)  {
     animation-delay: 4.8s;
   }
   
-  .appearable:nth-child(4) {
+  .appearable:nth-child(4) , .cardabout:nth-child(4)  {
     animation-delay: 5s;
   }
   .appearable{
     transition:all .3s ease-in-out;
+  }
+
+
+  .lestherapeutes{
+    font-size: 70px;
+    margin: 100px 0;
+    color: #002a77;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
   }
