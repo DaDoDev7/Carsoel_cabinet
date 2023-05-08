@@ -12,13 +12,35 @@
 }
 footer{
     background-color:rgb(12, 12, 12);
-    height: 100px;
     text-align: center;
-    small{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    .small{
         font-size: 15px;
         color: grey;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 30px;
+        padding-top: 40px;
+        a{
+            font-size: 14px;
+           color: white;
+           cursor: pointer;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
     }
     
+}
+address{
+    margin-top: 20px;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.438);
+    .name_address{
+        color: rgb(194, 91, 91);
+        margin-bottom: 40px;
+    }
+   
 }

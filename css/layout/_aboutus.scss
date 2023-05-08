@@ -1,0 +1,39 @@
+.about_us{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    flex-wrap: nowrap;
+   
+}
+.podologie{
+    display: flex;
+    gap:2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    .lapodologie,
+    .about_us_podologie{
+        flex: 1;
+    }
+}
+.lapodologie,
+.about_us_podologie{
+    min-width: 330px;
+
+}
+.lakinesitherapie{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.cardabout{
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.623);
+    position: relative;
+    transition: all .3s ease-in-out;
+    padding: 20px;
+    text-shadow: 5px 5px 10px #000;
+    &:hover{
+        outline: 1px solid white;
+    }
+    
+}
