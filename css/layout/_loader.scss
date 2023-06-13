@@ -31,11 +31,10 @@
   white-space: nowrap;
   font-family: 'Quicksand', sans-serif; ;
   color: #868585;
-  h1{
+  img{
+    width: 300px;
     opacity: 0;
-    font-size: 25px;
-    font-weight: 200;
-    animation: writing 1s ease-in-out .5s forwards
+    animation: writing 3s ease-in-out .5s forwards
   }
 }
 

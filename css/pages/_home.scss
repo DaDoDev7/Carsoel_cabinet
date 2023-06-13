@@ -9,29 +9,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     z-index: 3;
     .logo{
-        width: 300px;
+        width:50%;
         height: 300px;
         margin: 0 auto;
         text-align: center;
         position: relative;
+        @media screen and (max-width:1000px) {
+          width: 90%;
+          
+        }
        
 
         
         img{
-            overflow: hidden;
             width: 100%;
-            
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            
-            
-           
-
-        }
+}
     }
     h5{
         font-family: 'Ysabeau', sans-serif;
@@ -46,19 +45,15 @@
     }
 
 }
-
-
-
 //   spine animation
 
   .spine{
     position: fixed;
     left: -20%;
-    top: -80%;
-    width: 100vw;
+    top: -85%;
+    width: 100%;
   }
-.spinepic{
-    
+  .spinepic{
     width: 100%;
     transform: rotate(-90deg);
   }
