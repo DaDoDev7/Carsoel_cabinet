@@ -75,5 +75,19 @@ address{
     transition: .2s all ease-in-out;
   }
   #myBtn:hover i{
-    transform: translateY(-5px);
+   
+    animation: slideup .7s ease-in-out infinite;
+  }
+
+
+  @keyframes slideup {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-5px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
   }
