@@ -1,0 +1,110 @@
+//logo
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    height: 70vh;
+    .logo{
+        width:800px;
+        height: 250px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        margin-bottom: 100px;
+        @media screen and (max-width:850px) {
+          width: 600px;
+          height:200px
+          
+        }
+        @media screen and (max-width:660px) {
+          width: 350px;
+          height:100px
+          
+        }
+       
+
+        
+
+    }
+    h5{
+        font-family: 'Ysabeau', sans-serif;
+        margin:0;
+        font-size: 50px;
+        margin-bottom: 100px;
+        margin-top: 0;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 3px;
+
+    }
+
+}
+.writingstart{
+    font-size: 70px;
+    margin: 180px 0;
+    color: #002a77;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(243, 243, 243);
+    @media screen and (max-width:700px) {
+      font-size:50px;
+      
+    }
+}
+
+
+
+//animation scroll down arrow header 
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+  }
+  
+  .arrows path {
+    stroke: #0d2a3b;
+    fill: transparent;
+    stroke-width: 3px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }

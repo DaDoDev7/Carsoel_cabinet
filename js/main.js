@@ -114,3 +114,21 @@ function scrollToTop(duration) {
 
   window.requestAnimationFrame(animateScroll);
 }
+
+
+//scroll header disappear
+
+
+var scrollArrow = document.querySelector('.scrollarrow');
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  if (scrollPosition > 0.5 * viewportHeight) {
+    scrollArrow.style.opacity = '0';
+  } else {
+    scrollArrow.style.opacity = '1';
+  }
+});
+

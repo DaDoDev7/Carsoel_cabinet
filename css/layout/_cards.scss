@@ -24,9 +24,9 @@
    
   
     .contacts{
+        margin-top: auto;
         margin-bottom: 40px;
-       justify-content: flex-end;
-      
+       
        
     }
      &:hover img{
@@ -231,4 +231,8 @@
         margin: 0 auto;
       }
     
+    }
+
+    .pourquoi{
+      margin-top: 30px;
     }

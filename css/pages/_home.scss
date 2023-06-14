@@ -1,51 +1,7 @@
 
 
 
-//logo
 
-
-.heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    z-index: 3;
-    .logo{
-        width:800px;
-        height: 250px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        margin-bottom: 100px;
-        @media screen and (max-width:850px) {
-          width: 600px;
-          height:200px
-          
-        }
-        @media screen and (max-width:660px) {
-          width: 350px;
-          height:100px
-          
-        }
-       
-
-        
-
-    }
-    h5{
-        font-family: 'Ysabeau', sans-serif;
-        margin:0;
-        font-size: 50px;
-        margin-bottom: 100px;
-        margin-top: 0;
-        font-weight: 500;
-        font-style: italic;
-        letter-spacing: 3px;
-
-    }
-
-}
 //   spine animation
 
   .spine{
