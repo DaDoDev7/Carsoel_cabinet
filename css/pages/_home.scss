@@ -12,25 +12,26 @@
     width: 100%;
     z-index: 3;
     .logo{
-        width:50%;
-        height: 300px;
+        width:800px;
+        height: 250px;
         margin: 0 auto;
         text-align: center;
         position: relative;
-        @media screen and (max-width:1000px) {
-          width: 90%;
+        margin-bottom: 100px;
+        @media screen and (max-width:850px) {
+          width: 600px;
+          height:200px
+          
+        }
+        @media screen and (max-width:660px) {
+          width: 350px;
+          height:100px
           
         }
        
 
         
-        img{
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-}
+
     }
     h5{
         font-family: 'Ysabeau', sans-serif;
@@ -57,4 +58,5 @@
     width: 100%;
     transform: rotate(-90deg);
   }
+
 

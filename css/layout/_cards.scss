@@ -25,7 +25,8 @@
   
     .contacts{
         margin-bottom: 40px;
-        justify-content: flex-end;
+       justify-content: flex-end;
+      
        
     }
      &:hover img{
@@ -77,7 +78,7 @@
     font-size: 20px;
     .title{
         font-size: 26px;
-        font-weight: 600;
+        
   }
 }
 .phone_number{
@@ -179,3 +180,55 @@
     text-align: center;
     font-family: 'Dancing Script', cursive;
   }
+
+  .titre_card{
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-right: 20px;
+    
+    }
+    
+    .titre_card::after {
+      content: "\21c0";
+      display: inline-block;
+      transform: translateY(-50%);
+      animation: slideRight 3s infinite;
+      color: orangered;
+    }
+    
+    @keyframes slideRight {
+      0% {
+        transform: translateX(0); /* Posizione iniziale della freccia */
+      }
+      50% {
+        transform: translateX(10px); /* Posizione spostata verso destra */
+      }
+      100% {
+        transform: translateX(0); /* Torna alla posizione iniziale */
+      }
+    }
+
+
+    .lakinesitherapie {
+     
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      img{
+        width: 100%;
+      }
+    }
+    .textkinesitherapie{
+      
+      flex: 1;
+    }
+    .imgkinesitherapie{
+      width: 300px;
+      margin-left: 40px;
+      @media screen and (max-width:900px) {
+        margin-left: 0;
+        margin: 0 auto;
+      }
+    
+    }

@@ -68,3 +68,49 @@ window.addEventListener('scroll', function() {
   }
    navLinks[currentCardIndex].classList.add('darken');
 });
+
+
+//scroll top
+
+
+var mybutton = document.getElementById("myBtn");
+var lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scroll verso il basso
+    mybutton.style.opacity = '1';
+    mybutton.style.display = "block";
+  
+  } else {
+    // Scroll verso l'alto
+    mybutton.style.opacity = '0';
+    mybutton.style.display = "none";
+  }
+
+  lastScrollTop = scrollTop;
+});
+
+mybutton.addEventListener('click', function() {
+  scrollToTop(200);
+});
+
+function scrollToTop(duration) {
+  var start = window.pageYOffset;
+  var startTime = performance.now();
+
+  function animateScroll(timestamp) {
+    var currentTime = timestamp - startTime;
+    var progress = Math.min(currentTime / duration, 1);
+
+    window.scrollTo(0, start * (1 - progress));
+
+    if (currentTime < duration) {
+      window.requestAnimationFrame(animateScroll);
+    }
+  }
+
+  window.requestAnimationFrame(animateScroll);
+}
