@@ -37,16 +37,26 @@ window.addEventListener("scroll", function(e) {
 
 //LOADER ANIMATION
 
-window.addEventListener('load', function() {
-  var loader = document.querySelector('.loader_wrapper');
-  setTimeout(function() {
-    loader.classList.add('fade');
-    setTimeout(function() {
-      loader.style.display = 'none';
-    }, 1000); 
-  }, 3600);
-});
+var loaderShown = document.cookie.includes('loaderShown=true');
 
+if (!loaderShown) {
+  window.addEventListener('load', function() {
+    var loader = document.querySelector('.loader_wrapper');
+    setTimeout(function() {
+      loader.classList.add('fade');
+      setTimeout(function() {
+        loader.style.display = 'none';
+      }, 1000); 
+    }, 3600);
+
+    // Imposta un cookie per indicare che il loader è stato visualizzato
+    document.cookie = 'loaderShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+  });
+} else {
+  // Il loader è già stato visualizzato precedentemente, quindi nascondilo immediatamente
+  var loader = document.querySelector('.loader_wrapper');
+  loader.style.display = 'none';
+}
 
 //nav class  darken
 
