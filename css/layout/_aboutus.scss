@@ -1,49 +1,49 @@
-.about_us{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+// .about_us{
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: nowrap;
    
-}
-.podologie{
-    display: flex;
-    gap:2em;
-    margin-bottom: 2em;
-    flex-wrap: wrap;
-    .lapodologie,
-    .about_us_podologie{
-        flex: 1;
-    }
-}
-.lapodologie,
-.about_us_podologie{
-    min-width: 330px;
+// }
+// .podologie{
+//     display: flex;
+//     gap:2em;
+//     margin-bottom: 2em;
+//     flex-wrap: wrap;
+//     .lapodologie,
+//     .about_us_podologie{
+//         flex: 1;
+//     }
+// }
+// .lapodologie,
+// .about_us_podologie{
+//     min-width: 330px;
 
-}
-.lakinesitherapie{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-}
-.cardabout{
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0.822);
-    position: relative;
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-    padding: 20px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    animation-name: appear;
-    opacity: 0;
-    animation-duration: 0.9s;
-    animation-fill-mode: forwards; /* L'animazione mantiene l'ultimo stato */
-    transition: all .8s ease-in-out;
-    &:hover{
-        // outline: 1px solid white;
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-    }
+// }
+// .lakinesitherapie{
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 2em;
+// }
+// .cardabout{
+//     border-radius: 8px;
+//     background: rgba(0, 0, 0, 0.822);
+//     position: relative;
+//     font-size: 20px;
+//     transition: all .3s ease-in-out;
+//     padding: 20px;
+//     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+//     animation-name: appear;
+//     opacity: 0;
+//     animation-duration: 0.9s;
+//     animation-fill-mode: forwards; /* L'animazione mantiene l'ultimo stato */
+//     transition: all .8s ease-in-out;
+//     &:hover{
+//         // outline: 1px solid white;
+//         transform: translateY(-5px);
+//         box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+//     }
     
-}
+// }
 
 // immagine piede
 
@@ -86,3 +86,32 @@ details[open] summary h3::before {
     transform: translateY(-50%) rotate(90deg); /* Ruota la freccia quando l'elemento <details> è aperto */
   }
 
+.groupPic{
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+ 
+  &::before{
+    content: '';
+    background-color: rgba(26, 26, 196, 0.123);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    @media screen and (min-width:1000px) {
+        width: 50%;
+    }
+    }
+}
+.img_group{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    @media screen and (min-width:1000px) {
+        width: 50%;
+    }
+}

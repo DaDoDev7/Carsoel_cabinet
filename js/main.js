@@ -1,4 +1,27 @@
+// AOS
 
+AOS.init();
+
+//Swiper
+
+const swiper = new Swiper('.swiper', {
+
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
 
 // barra navigazione che cambia allo scroll
 
@@ -41,13 +64,16 @@ var loaderShown = document.cookie.includes('loaderShown=true');
 
 window.addEventListener('load', function() {
   var loader = document.querySelector('.loader_wrapper');
-  setTimeout(function() {
-    loader.classList.add('fade');
+  if (loader) {
     setTimeout(function() {
-      loader.style.display = 'none';
-    }, 1000); 
-  }, 3600);
+      loader.classList.add('fade');
+      setTimeout(function() {
+        loader.style.display = 'none';
+      }, 1000); 
+    }, 3600);
+  }
 });
+
 
 //nav class  darken
 

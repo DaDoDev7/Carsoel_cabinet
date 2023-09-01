@@ -5,6 +5,9 @@
     align-items: stretch;
     gap: 2em;
     flex-wrap: wrap;
+    li{
+      line-height: 27px;
+    }
 }
 .card{
     text-align: center;
@@ -49,6 +52,8 @@
 .name{
     font-size: 20px;
     padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
     span{
         font-size: 40px;
         margin-bottom: 0;
@@ -97,15 +102,7 @@
         }
         
     }
-    .linkedin{
-        color:#00a0dc;
-        &:hover{
-          filter: brightness(80%);
-        }
-        
-        
-    }
-    
+
 }
 //card buttons
 
@@ -175,7 +172,8 @@
     margin: 180px 0;
     color: #002a77;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
   }
 
   .titre_card{

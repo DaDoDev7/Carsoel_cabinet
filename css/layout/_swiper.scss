@@ -1,0 +1,38 @@
+.swiper {
+    width: 100%;
+    height: 600px;
+  }
+
+  .carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    &::before{
+        content: '';
+        background-color: rgba(1, 55, 106, 0.295);
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+    }
+  }
+  .swiper-slide > img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-drag: none;
+     -webkit-touch-callout: none;
+    
+  }
+    

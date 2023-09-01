@@ -6,13 +6,19 @@
 
   .spine{
     position: fixed;
-    left: -20%;
+    left: -40%;
     top: -85%;
     width: 100%;
+    @media screen and (max-width:1445px) {
+      left: -45%;
+           
+    }
+    @media screen and (min-width:400px) {
+      top: -45%;
+    }
   }
   .spinepic{
     width: 100%;
-    transform: rotate(-90deg);
   }
 
 
