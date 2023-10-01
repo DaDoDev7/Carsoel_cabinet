@@ -29,10 +29,6 @@
         margin-bottom: 40px;
 
     }
-     &:hover img{
-        filter: brightness(100%) ;
-        transform: scale(1.02);
-    }
 
 }
 .card:hover{
@@ -47,7 +43,8 @@
 }
 
 .specialisation{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    box-shadow: #002a77;
 }
 .name{
     font-size: 20px;
@@ -55,7 +52,7 @@
     text-transform: uppercase;
     font-family: 'Cinzel', serif;
     span{
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 0;
     }
 }
@@ -63,13 +60,18 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    overflow: hidden;
-    border-radius: 50%;
-    img{
+    
+      img{
         width: 100%;
+        aspect-ratio: 3/3;
+        border-radius: 50%;
         object-fit: cover;
         filter: grayscale(40%) ;
         transition: all .3s ease-in-out;
+        &:hover{
+          transform: scale(1.02);
+          filter: grayscale(0) ;
+        }
 }
 
 
@@ -80,6 +82,9 @@
     font-size: 20px;
     .title{
         font-size: 26px;
+        &::after{
+          color: orange;
+        }
         
   }
 }
@@ -150,13 +155,13 @@
   
  
   .appearable:nth-child(1), .cardabout:nth-child(1) {
-    animation-delay: 4.4s;
+    animation-delay: 2.4s;
   }
   .appearable:nth-child(2) , .cardabout:nth-child(2)  {
-    animation-delay: 4.6s;
+    animation-delay: 2.6s;
   }
   .appearable:nth-child(3) , .cardabout:nth-child(3)  {
-    animation-delay: 4.8s;
+    animation-delay: 2.8s;
   }
   
   .appearable:nth-child(4) , .cardabout:nth-child(4)  {
@@ -173,7 +178,8 @@
     color: #002a77;
     text-align: center;
     font-family: 'Cinzel', serif;
-    font-weight: 200;
+    font-weight: 450;
+    z-index: 10;
   }
 
   .titre_card{
@@ -183,15 +189,7 @@
     padding-right: 20px;
     
     }
-    
-    .titre_card::after {
-      content: "\21c0";
-      display: inline-block;
-      transform: translateY(-50%);
-      animation: slideRight 3s infinite;
-      color: orangered;
-    }
-    
+
     @keyframes slideRight {
       0% {
         transform: translateX(0); /* Posizione iniziale della freccia */
@@ -202,32 +200,4 @@
       100% {
         transform: translateX(0); /* Torna alla posizione iniziale */
       }
-    }
-
-
-    .lakinesitherapie {
-     
-      display: flex;
-      flex-direction: row !important;
-      flex-wrap: wrap;
-      img{
-        width: 100%;
-      }
-    }
-    .textkinesitherapie{
-      
-      flex: 1;
-    }
-    .imgkinesitherapie{
-      width: 300px;
-      margin-left: 40px;
-      @media screen and (max-width:900px) {
-        margin-left: 0;
-        margin: 0 auto;
-      }
-    
-    }
-
-    .pourquoi{
-      margin-top: 30px;
     }

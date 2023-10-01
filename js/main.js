@@ -70,7 +70,7 @@ window.addEventListener('load', function() {
       setTimeout(function() {
         loader.style.display = 'none';
       }, 1000); 
-    }, 3600);
+    }, 2600);
   }
 });
 

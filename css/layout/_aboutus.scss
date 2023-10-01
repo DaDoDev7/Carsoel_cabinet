@@ -71,21 +71,6 @@ summary h3{
     
 }
 
-summary h3::before {
-    content: "\25BA"; /* Codice Unicode per una freccia verso destra */
-    transition: transform 0.3s ease; /* Aggiunge una transizione al cambiamento di trasformazione */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease; 
-
-
-}
-details[open] summary h3::before {
-    transform: translateY(-50%) rotate(90deg); /* Ruota la freccia quando l'elemento <details> è aperto */
-  }
-
 .groupPic{
   margin-bottom: 50px;
   position: relative;
