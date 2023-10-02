@@ -60,11 +60,13 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    border-radius: 50%;
+    overflow:hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     
       img{
         width: 100%;
         aspect-ratio: 3/3;
-        border-radius: 50%;
         object-fit: cover;
         filter: grayscale(40%) ;
         transition: all .3s ease-in-out;
