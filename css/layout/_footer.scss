@@ -18,6 +18,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     height: 150px;
+    position: relative;
     .small{
         font-size: 15px;
         color: grey;
@@ -35,7 +36,6 @@ footer{
 }
 address{
     margin-top: 20px;
-  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(255, 255, 255, 0.438);
     .name_address{
